@@ -33,7 +33,17 @@ const harmlessRansomNote = (noteText, magazineText) => {
     magazineObj[word]++;
   });
 
-  console.log(magazineObj);
+  let noteIsPossible = true;
+  noteTextArr.forEach(word => {
+    if (magazineObj[word]) {
+      magazineObj[word]--;
+      if (magazineObj[word] < 0) noteIsPossible = false;
+    }
+    else noteIsPossible = false;
+  })
+
+  return noteIsPossible;
 }
 
-harmlessRansomNote('bed', 'hits is all bed adn ddd');
+
+console.log(harmlessRansomNote('ber test', 'test s ads now  s sad ber deer sda ber beer  ber'));

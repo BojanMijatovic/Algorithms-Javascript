@@ -22,12 +22,18 @@
 // fizzbuzz(30);
 
 
-
+// New Algorithm
 // Harmless Ransom Note
-const log = (arr) => {
-  console.log(arr[0]);
-  console.log(arr[1]);
-};
+const harmlessRansomNote = (noteText, magazineText) => {
+  let noteTextArr = noteText.split(' ');
+  let magazineTextArr = magazineText.split(' ');
+  const magazineObj = {};
+  magazineTextArr.forEach(word => {
+    if (!magazineObj[word]) magazineObj[word] = 0;
+    magazineObj[word]++;
+  });
 
-log([1, 3, 4, 5, 6]);
-log([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
+  console.log(magazineObj);
+}
+
+harmlessRansomNote('bed', 'hits is all bed adn ddd');

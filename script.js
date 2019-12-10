@@ -46,4 +46,4 @@ const harmlessRansomNote = (noteText, magazineText) => {
 }
 
 
-console.log(harmlessRansomNote('ber test', 'test s ads now  s sad ber deer sda ber beer  ber'));
+console.log(harmlessRansomNote('ber test secret', 'test s ads now  s sad ber deer sda ber beer  ber'));

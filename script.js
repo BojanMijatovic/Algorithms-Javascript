@@ -51,18 +51,18 @@
 // new Algorithm
 //Is palindrome
 
-const isPalindrome = (str) => {
-  str = str.toLowerCase();
-  let charArr = str.split('');
-  let validCharacters = 'abcdefghijklmnopqrstuvwxyz'.split('');
+// const isPalindrome = (str) => {
+//   str = str.toLowerCase();
+//   let charArr = str.split('');
+//   let validCharacters = 'abcdefghijklmnopqrstuvwxyz'.split('');
 
-  let lettersArr = [];
-  charArr.forEach(char => {
-    if (validCharacters.indexOf(char) > -1) lettersArr.push(char);
-  });
+//   let lettersArr = [];
+//   charArr.forEach(char => {
+//     if (validCharacters.indexOf(char) > -1) lettersArr.push(char);
+//   });
 
-  return lettersArr.join('') === lettersArr.reverse().join('');
-}
+//   return lettersArr.join('') === lettersArr.reverse().join('');
+// }
 
 
-console.log(isPalindrome('test one'));
+// console.log(isPalindrome('test one'));

@@ -66,3 +66,18 @@
 
 
 // console.log(isPalindrome('test one'));
+
+
+// --------- Challenges 
+
+
+// --- Word counter
+
+// const counter = (str) => {
+//   return str.split(' ').length;
+// }
+
+// console.log(counter('Hew  sa dasad sdas dsas sad'));
+
+
+

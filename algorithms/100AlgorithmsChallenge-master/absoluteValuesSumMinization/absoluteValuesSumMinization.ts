@@ -1,5 +1,5 @@
 function absoluteValuesSumMinimization(a: number[]): number {
-
+  return a.length;
 }
 
 // console.log(absoluteValuesSumMinimization([2, 4, 7]));
